@@ -4,3 +4,18 @@
 # Demo Screen Shot
 
 # Usage
+```
+#import "AppointmentDateTimePicker.h"
+```
+```
+@property (nonatomic, strong) AppointmentDateTimePicker *appointDateTimePicker;
+```
+implement the AppointmentDateTimePickerDelegate
+```
+#pragma mark - AppointmentDateTimePickerDelegate
+
+- (void)appointmentDateTimePicker:(AppointmentDateTimePicker *)appointmentDateTimePicker didDismissWithData:(id)data {
+    NSLog(@"appointmentDateTimePicker,data = %@",data);
+}
+```
+So easy,and you can edit the code also
